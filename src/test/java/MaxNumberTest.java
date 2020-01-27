@@ -9,4 +9,11 @@ public class MaxNumberTest {
         int maxNumber=MaxNumber.findMaxNumber(10,5,2);
         Assert.assertEquals(10,maxNumber);
     }
+
+
+    @Test
+    public void givenMaxNumber_atSecondPosition_then_returnSameNumber() {
+        int maxNumber=MaxNumber.findMaxNumber(10,15,2);
+        Assert.assertEquals(15,maxNumber);
+    }
 }
