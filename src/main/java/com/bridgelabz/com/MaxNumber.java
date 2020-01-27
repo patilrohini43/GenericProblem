@@ -13,4 +13,18 @@ public class MaxNumber {
         }
         return max;
     }
+
+
+    public static float findFloatMaxNumber(float x, float y, float z) {
+        float max=x;
+        if(y > max )
+        {
+            max=y;
+        }
+        if(z > max)
+        {
+            max=z;
+        }
+        return max;
+    }
 }
