@@ -16,4 +16,10 @@ public class MaxNumberTest {
         int maxNumber=MaxNumber.findMaxNumber(10,15,2);
         Assert.assertEquals(15,maxNumber);
     }
+
+    @Test
+    public void givenMaxNumber_atThirdPosition_then_returnSameNumber() {
+        int maxNumber=MaxNumber.findMaxNumber(10,15,20);
+        Assert.assertEquals(20,maxNumber);
+    }
 }
