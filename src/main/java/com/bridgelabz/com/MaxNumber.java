@@ -1,8 +1,8 @@
 package com.bridgelabz.com;
-public class MaxNumber {
+public class MaxNumber<T extends Comparable<T>> {
 
-    public static int findMaxNumber(Integer x, Integer y, Integer z) {
-        Integer max=x;
+    public static <T extends Object & Comparable<T>> T maxNumber(T x, T y, T z) {
+        T max=x;
         if(y.compareTo(max) > 0 )
         {
             max=y;
@@ -14,26 +14,4 @@ public class MaxNumber {
         return max;
     }
 
-
-    public static float findFloatMaxNumber(Float x, Float y, Float z) {
-        Float max = x;
-        if (y.compareTo(max) > 0) {
-            max = y;
-        }
-        if (z.compareTo(max) > 0) {
-            max = z;
-        }
-        return max;
-    }
-
-    public static String findStringMaxNumber(String x, String y, String z) {
-        String max = x;
-        if (y.compareTo(max) > 0) {
-            max = y;
-        }
-        if (z.compareTo(max) > 0) {
-            max = z;
-        }
-        return max;
-    }
 }
