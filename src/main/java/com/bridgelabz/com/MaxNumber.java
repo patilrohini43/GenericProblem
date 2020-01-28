@@ -22,6 +22,12 @@ public class MaxNumber<T extends Comparable<T>> {
                 max = element;
             }
         }
+        return printMax(max);
+    }
+
+    private static <T extends Object & Comparable<T>> T printMax(T max) {
+        System.out.println(max);
         return max;
     }
+
 }
