@@ -1,4 +1,5 @@
 package com.bridgelabz.com;
+
 public class MaxNumber<T extends Comparable<T>> {
 
     public static <T extends Object & Comparable<T>> T maxNumber(T x, T y, T z) {
@@ -14,4 +15,13 @@ public class MaxNumber<T extends Comparable<T>> {
         return max;
     }
 
+    public static <T extends Object & Comparable<T>, params> T maxNumber(T... elements) {
+        T max = elements[0];
+        for (T element : elements) {
+            if (element.compareTo(max) > 0) {
+                max = element;
+            }
+        }
+        return max;
+    }
 }
