@@ -29,7 +29,7 @@ public class MaxNumber<T extends Comparable<T>> {
         return printMax(max);
     }
 
-    private static <T extends Object & Comparable<T>> T printMax(T max) {
+    private static <T> T printMax(T max) {
         System.out.println(max);
         return max;
     }
